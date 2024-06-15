@@ -2,11 +2,11 @@ class MyDict(dict):
     """
     Класс словаря для переопределения метода get
     """
-    def get(self, value):
+    def get(self, value, return_value=0):
         if value in self.keys():
             return self[value]
         else:
-            return 0
+            return return_value
 
 
 """Переопределенный словарь"""
